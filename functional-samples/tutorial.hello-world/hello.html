@@ -1,6 +1,85 @@
+<!--
 <html>
   <body>
     <h1>Hello Extensions</h1>
     <script src="popup.js"></script>
   </body>
+</html> 
+*/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chromagotchi Extension</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #7e57c2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust as needed */
+  }
+  .container {
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .pet-name {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .progress-container {
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px;
+    height: 20px;
+    width: 200px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+  }
+  .progress-bar {
+    height: 100%;
+    border-radius: 25px;
+    background-color: #00c853;
+    width: 57%; /* Adjust based on progress */
+    transition: width 0.5s ease-in-out;
+  }
+  .settings {
+    margin-top: 20px;
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .settings:hover {
+    background-color: white;
+    color: #7e57c2;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div style="text-align:left; font-weight: bold; font-size: 1.2em;">chromagotchi</div>
+  <div id="pet-image" style="margin: 10px 0;">
+    <!-- Include your pet image here --> 
+    <img src="chromagotchi-icon.png" alt="Pet" style="width: 50px; height: 50px;">
+  </div>
+  <div class="pet-name">my-pet-name</div>
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+  <span style="margin-right: 10px;">57</span>
+  <button class="settings">settings</button>
+</div>
+<script src="popup.js"></script>
+</body>
 </html>
+
